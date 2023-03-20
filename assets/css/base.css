@@ -8,6 +8,8 @@
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
+    --header-search-height: 40px;
 }
 
 * {
@@ -54,50 +56,6 @@ html {
         }
     }
 */
-
-
-/* 
-    pc: >=1024px
-    tablet: >= 740px & < 1024px
-    mobile: <740px; 
-*/
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-.gird__full-width {
-    width: 100%;
-}
-
-
-/* == column == */
-
-
-/* .grid__column-2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 16.667%;
-}
-.grid__column-2-4 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20%;
-}
-.grid__column-10 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 83.333%;
-} */
 
 
 /* Animation */
