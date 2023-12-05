@@ -283,6 +283,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
         opacity: 0;
         transform: scale(0);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -1043,7 +1044,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
 }
 
 .app__content {
-    padding-top: 36px;
+    padding-top: 10px;
 }
 
 .category {
@@ -1253,40 +1254,41 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
 
 /* product item */
 
-.home-product {
+.container-kiot {
     margin-bottom: 10px;
 }
 
-.home-product-wrap {
-    text-decoration: none;
+.wrap-kiot {
+    margin-bottom: 10px;
 }
 
-.home-product-item {
+.card-kiot {
     margin-top: 10px;
     background-color: var(--white-color);
     position: relative;
     box-shadow: rgb(0 0 0 / 10%) 0px 0.0625rem 0.125rem 0px;
     transition: transform linear 0.1s;
     will-change: transform;
+    height: 100%;
 }
 
-.home-product-item:hover {
+.card-kiot:hover {
     transform: translateY(-1px);
     box-shadow: rgb(0 0 0 / 5%) 0px 0.0625rem 20px 0px;
 }
 
-.home-product-item__img {
+.card-kiot__img {
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
 }
 
-.home-product-item-content {
+.card-kiot-content {
     padding: 8px;
 }
 
-.home-product-item__name {
+.card-kiot__name {
     font-size: 0.75rem;
     color: rgba(0, 0, 0, .87);
     font-weight: 500;
@@ -1310,7 +1312,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
 
 /* thẻ giảm giá và shop xu hướng */
 
-.home-product-item__sale-plus {
+.card-kiot__sale-plus {
     display: flex;
     align-items: center;
     position: relative;
@@ -1319,11 +1321,11 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     height: 16px;
 }
 
-.home-product-item__sale-plus-stamp {
+.card-kiot__sale-plus-stamp {
     margin-right: 0.25rem;
 }
 
-.home-product-item__sale-plus-stamp-price--enable {
+.card-kiot__sale-plus-stamp-price--enable {
     font-size: 0.625rem;
     display: inline-block;
     background-color: rgb(246, 145, 19);
@@ -1338,11 +1340,11 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     white-space: nowrap;
 }
 
-.home-product-item__sale-plus-stamp-price--disable {
+.card-kiot__sale-plus-stamp-price--disable {
     display: none;
 }
 
-.home-product-item__sale-plus-stamp-price::after {
+.card-kiot__sale-plus-stamp-price::after {
     content: "";
     display: block;
     background-color: rgb(246, 145, 19);
@@ -1353,7 +1355,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     top: -1px;
 }
 
-.home-product-item__sale-plus-stamp-price::before {
+.card-kiot__sale-plus-stamp-price::before {
     content: "";
     display: block;
     background-color: rgb(246, 145, 19);
@@ -1364,21 +1366,21 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     bottom: -1px;
 }
 
-.home-product-item__sale-plus-stamp-svg1 {
+.card-kiot__sale-plus-stamp-svg1 {
     position: absolute;
     right: -9px;
     height: 100%;
     width: 1rem;
 }
 
-.home-product-item__sale-plus-stamp-svg2 {
+.card-kiot__sale-plus-stamp-svg2 {
     position: absolute;
     left: -9px;
     height: 100%;
     width: 1rem;
 }
 
-.home-product-item__sale-plus-trend--enable {
+.card-kiot__sale-plus-trend--enable {
     color: rgb(255, 0, 32);
     padding: 0 4px;
     font-size: 0.625rem;
@@ -1391,61 +1393,72 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     line-height: 14px;
 }
 
-.home-product-item__sale-plus-trend--disable {
+.card-kiot__sale-plus-trend--disable {
     display: none;
 }
 
 
 /* Price */
 
-.home-product-item__price {
+.card-kiot__category {
     padding: 12px 0 8px 0;
+    font-size: 12px;
+    color: black;
 }
 
-.home-product-item__price-old {
-    font-size: 0.875rem;
-    color: rgba(0, 0, 0, .54);
-    text-decoration: line-through;
-    margin-right: 10px;
+.card-kiot__category-li {
+    padding: 0 5px;
+    color: white;
 }
 
-.home-product-item__price-new {
-    font-size: 1rem;
-    color: var(--primary-color);
+.card-kiot__category-li-1 {
+    background-color: #0766AD;
 }
 
-.home-product-item__price-new-sub {
-    color: var(--primary-color);
-    font-size: 0.75rem;
-    margin-right: 0.5px;
+.card-kiot__category-li-2 {
+    background-color: #D0A2F7;
+}
+
+.card-kiot__category-li-3 {
+    background-color: #BCA37F;
 }
 
 
 /* action */
 
-.home-product-item__action {
+.card-kiot__action {
     display: flex;
 }
 
-.home-product-item__rating {
+.card-kiot__rating {
     font-size: 0.5rem;
     color: var(--star-gold-color);
 }
 
-.home-product-item__sold {
+.card-kiot__sold {
     font-size: 0.75rem;
     color: rgba(0, 0, 0, .87);
     margin-left: 4px;
 }
 
-.home-product-item__origin {
+.card-kiot__origin {
     font-size: 0.75rem;
     margin-top: 4px;
 }
 
-.home-product-item__made-in {
+.card-kiot__made-in {
     color: rgba(0, 0, 0, .65);
     ;
+}
+
+/* phone */
+.card-kiot__phone {
+    padding: 6px 0;
+}
+
+.card-kiot__social-link {
+    font-size: 12px;
+    text-decoration: none;
 }
 
 
@@ -1454,7 +1467,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
 
 /* favourite */
 
-.home-product-item__sale-wrap {
+.card-kiot__sale-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1464,7 +1477,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     right: 0;
 }
 
-.home-product-item__favourite {
+.card-kiot__favourite {
     color: var(--primary-color);
     font-size: 0.75rem;
     background-color: currentColor;
@@ -1474,16 +1487,16 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     left: -3px;
 }
 
-.home-product-item__favourite span {
+.card-kiot__favourite span {
     color: var(--white-color);
 }
 
-.home-product-item__favourite i {
+.card-kiot__favourite i {
     color: var(--white-color);
     margin-right: 2px;
 }
 
-.home-product-item__favourite::after {
+.card-kiot__favourite::after {
     content: "";
     display: block;
     position: absolute;
@@ -1497,7 +1510,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
 
 /* mall */
 
-.home-product-item__mall {
+.card-kiot__mall {
     color: #D0011B;
     font-size: 0.75rem;
     background-color: currentColor;
@@ -1507,15 +1520,15 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     left: -3px;
 }
 
-.home-product-item__mall>i {
+.card-kiot__mall>i {
     display: none;
 }
 
-.home-product-item__mall span {
+.card-kiot__mall span {
     color: var(--white-color);
 }
 
-.home-product-item__mall::after {
+.card-kiot__mall::after {
     content: "";
     display: block;
     position: absolute;
@@ -1529,7 +1542,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
 
 /* sale off */
 
-.home-product-item__sale-off {
+.card-kiot__sale-off {
     position: absolute;
     background-color: rgba(255, 216, 64, 0.94);
     right: 0;
@@ -1542,7 +1555,7 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     height: 34px;
 }
 
-.home-product-item__sale-off::after {
+.card-kiot__sale-off::after {
     content: "";
     display: block;
     position: absolute;
@@ -1554,12 +1567,12 @@ mép trên của block QR, thì khi rê chuột sẽ làm biến mất block qr
     border-color: transparent currentColor transparent currentColor;
 }
 
-.home-product-item__sale-off-percent {
+.card-kiot__sale-off-percent {
     color: var(--primary-color);
     font-size: 0.75rem;
 }
 
-.home-product-item__sale-off-label {
+.card-kiot__sale-off-label {
     color: var(--white-color);
     font-size: 0.75rem;
 }
